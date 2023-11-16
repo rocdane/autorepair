@@ -7,7 +7,7 @@ export default function Footer() {
         <div className="footer">
             <Container >
                 <Grid container>
-                    <Grid item lg={3} md={6} className='footer-contact'>
+                    <Grid item lg={3} md={6} className='footer-contact' textAlign={'left'}>
                         <h2>Get In Touch</h2>
                         <p><i className="fa fa-map-marker-alt"></i>123 Street, New York, USA</p>
                         <p><i className="fa fa-phone-alt"></i>+012 345 67890</p>

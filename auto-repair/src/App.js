@@ -7,10 +7,13 @@ import About from './components/About';
 import Service from './components/Service';
 import Fact from './components/Fact';
 import Team from './components/Team';
-import Testimonial from './components/Testimonial';
+import Partner from './components/Partner';
 import Footer from './components/Footer';
+import Top from './components/Top';
+import Loader from './components/Loader';
 
 function App() {
+
   return (
     <div className="App">
       <TopBar></TopBar>
@@ -20,7 +23,8 @@ function App() {
       <Service></Service>
       <Fact></Fact>
       <Team></Team>
-      <Testimonial></Testimonial>
+      <Partner></Partner>
+      <Top></Top>
       <Footer></Footer>
     </div>
   );

@@ -45,23 +45,25 @@ const services = [
 ]
 function Service(){
     return(
-        <Container className='service'>
-            <Box component="div" sx={{ flexGrow: 0}} className="section-header text-center" textAlign='center'>
-                <p>What We Do?</p>
-                <h2>Premium Washing Services</h2>
-            </Box>
-            <Box component="div" sx={{ flexGrow: 0}}>
-                <Grid container>
-                {services.map((service,i) => (
-                    <Grid item md={6} lg={3} className='service-item' key={i}>
-                        <i className={service.icon}></i>
-                        <h3>{service.title}</h3>
-                        <p>{service.description}</p>
+        <div id='service'>
+            <Container className='service'>
+                <Box component="div" sx={{ flexGrow: 0}} className="section-header text-center" textAlign='center'>
+                    <p>What We Do?</p>
+                    <h2>Premium Washing Services</h2>
+                </Box>
+                <Box component="div" sx={{ flexGrow: 0}}>
+                    <Grid container>
+                    {services.map((service,i) => (
+                        <Grid item md={6} lg={3} className='service-item' key={i}>
+                            <i className={service.icon}></i>
+                            <h3>{service.title}</h3>
+                            <p>{service.description}</p>
+                        </Grid>
+                    ))}
                     </Grid>
-                ))}
-                </Grid>
-            </Box>
-        </Container>
+                </Box>
+            </Container>
+        </div>
     );
 }
 

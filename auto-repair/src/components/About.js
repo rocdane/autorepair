@@ -20,7 +20,8 @@ export default function About(){
         'Window wiping'
     ];
     return(
-        <Container className='about'>
+        <div id='about-us'>
+        <Container className='about' >
             <Grid container justifyContent='center' alignItems='center' spacing={2}>
                 <Grid item md={6} xl={12}>
                     <Box className='about-img' component="div" sx={{ flexGrow: 0}}>
@@ -45,11 +46,12 @@ export default function About(){
                                 </ListItem>
                             ))}
                             </List>
-                            <Button className="btn btn-custom" href='/'>Learn More</Button>
+                            <Button className="btn btn-custom" href='/about-us'>Learn More</Button>
                         </Box>
                     </Box>
                 </Grid>
             </Grid>
         </Container>
+        </div>
     );
 }

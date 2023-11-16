@@ -10,7 +10,7 @@ function TopBar(){
             <Grid container className='top-bar' justifyItems='center'>
                 <Grid className='logo' item xs={12} md={4}>
                     <Box component="div" sx={{ flexGrow: 0}}>
-                        <Link href="/index.html">
+                        <Link href="/">
                             <img src="/assets/img/logo.png" width={60} height={60} alt="Logo"/>
                         </Link>
                     </Box>

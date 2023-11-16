@@ -26,21 +26,21 @@ function Barner(){
 
     return(
         <Carousel className="carousel">
-            {
-                items.map( (item, i) => (
-                    <Paper className="carousel-item" key={i}>
-                        <div className="carousel-img">
-                            <img src={item.picture} alt="Image"/>
-                        </div>
-                        <div className="carousel-text">
-                            <h3>{item.title}</h3>
-                            <h1>{item.subtitle}</h1>
-                            <p>{item.description}</p>
-                            <Button className="btn btn-custom" href=''> Explore More</Button>
-                        </div>
-                    </Paper>
-                ))
-            }
+        {
+        items.map( (item, i) => (
+            <Paper className="carousel-item" key={i}>
+                <div className="carousel-img">
+                    <img src={item.picture} alt="Image"/>
+                </div>
+                <div className="carousel-text">
+                    <h3>{item.title}</h3>
+                    <h1>{item.subtitle}</h1>
+                    <p>{item.description}</p>
+                    <Button className="btn btn-custom" href='/service'> Explore More</Button>
+                </div>
+            </Paper>
+        ))
+        }
         </Carousel>
     );
 }

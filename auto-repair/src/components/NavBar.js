@@ -15,11 +15,11 @@ import {
 import MenuIcon from '@mui/icons-material/Menu';
 
 const pages = [
-    {name:'Home',location:'index.html'},
-    {name:'About',location:'about.html'},
-    {name:'Service',location:'service.html'},
-    {name:'Team',location:'team.html'},
-    {name:'Contact',location:'contact.html'}
+    {name:'Home',location:'/#'},
+    {name:'About',location:'/#about-us'},
+    {name:'Service',location:'/#service'},
+    {name:'Team',location:'/#team'},
+    {name:'Contact',location:'/contact'}
 ];
 
 const theme = createTheme({
@@ -74,13 +74,13 @@ function NavBar(){
                                 display: { xs: 'block', md: 'none' },
                             }}
                         >
-                            {pages.map((page,i) => (
-                                <MenuItem key={i} onClick={handleCloseNavMenu} className="nav-item nav-link active">
-                                    <Link href={page.location} underline="none">
-                                        <Typography textAlign="center">{page.name}</Typography>
-                                    </Link>
-                                </MenuItem>
-                            ))}
+                        {pages.map((page,i) => (
+                            <MenuItem key={i} onClick={handleCloseNavMenu} className="nav-item nav-link active">
+                                <Link href={page.location} underline="none">
+                                    <Typography textAlign="center">{page.name}</Typography>
+                                </Link>
+                            </MenuItem>
+                        ))}
                         </Menu>
                     </Box>
                     <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
